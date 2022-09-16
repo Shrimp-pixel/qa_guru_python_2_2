@@ -17,5 +17,5 @@ def test_first():
 
 def test_second():
     browser.open('https://google.com/ncr')
-    browser.element('[name="q"]').should(be.blank).type('qwerty').press_enter()
+    browser.element('[name="q"]').should(be.blank).type('йцукенгфыыыыыывавпапарпрпра').press_enter()
     browser.element('[id="search"]').should_not(have.text('Selene - User-oriented Web UI browser tests in Python'))
